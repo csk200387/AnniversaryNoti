@@ -1,6 +1,5 @@
 import json
 
-
 f = open("행정부.json", "r")
 anni_json = json.load(f)
 f.close()
