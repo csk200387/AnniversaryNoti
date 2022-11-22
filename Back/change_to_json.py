@@ -15,12 +15,12 @@ for i in range(1,len(tmp)) : # 1 ~ tmp라는 배열의 길이
  
     a = {}
    
-    b = l[2].text.strip().replace('.', '월',1).replace('.', '일 ',1)
+    b = l[2].text.strip().replace('.','월',1).replace('.','일',1)
   
-    a['기념일 '] = l[1].text.strip()
+    a['기념일'] = l[1].text.strip()
     a['주관부처'] = l[3].text.strip()
     a['행사설명'] = l[4].text.strip()
     c[b] = a
 
-c = json.dumps(c, ensure_ascii=False, sort_keys=False)
+c = json.dumps(c,ensure_ascii=False,sort_keys=False)
 print(c)
