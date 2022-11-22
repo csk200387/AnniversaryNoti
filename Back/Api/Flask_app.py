@@ -1,7 +1,7 @@
 # A very simple Flask Hello World app for you to get started with...
 
 from flask import Flask, redirect, request
-import requests, random, json
+import random, json
 from datetime import datetime
 from pytz import timezone
 
