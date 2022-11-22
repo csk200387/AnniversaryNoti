@@ -22,5 +22,5 @@ for i in range(1,len(tmp)) : # 1 ~ tmp라는 배열의 길이
     a['행사설명'] = l[4].text.strip()
     c[b] = a
 
-c = json.dumps(c, ensure_ascii=False, sort_keys=False, separators=(',', ':')) 
+c = json.dumps(c, ensure_ascii=False, sort_keys=False)
 print(c)
